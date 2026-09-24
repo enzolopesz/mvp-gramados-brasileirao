@@ -1,4 +1,4 @@
-# Modelagem e Catálogo de Dados
+# Modelagem e Catálogo de Dados (Etapa 4.3)
 
 ## Escopo e referência dos metadados
 
@@ -205,12 +205,10 @@ Os indicadores descrevem associações observadas. Não demonstram que o gramado
 
 ## Evidências e integração com o README
 
-Este arquivo corresponde ao catálogo transcrito solicitado na Etapa 4.3. Deve ser vinculado à seção **Modelagem e Catálogo de Dados** do README. As imagens devem ser adicionadas ao repositório e incorporadas ao documento de entrega:
+O [README](../README.md) apresenta a modelagem e incorpora as evidências disponíveis da execução em nuvem. O catálogo transcrito neste documento contém as 67 colunas da exportação de metadados, sem depender de uma captura individual de cada coluna.
 
-- `10_catalogo_completo.png`: tabelas persistidas no catálogo.
-- Captura das colunas e tipos de uma tabela no Catalog Explorer.
-- `21_catalogo_colunas_documentadas.png`: conferência das sete tabelas sem descrições ausentes.
+- [Sete tabelas no Catalog Explorer](evidencias/08_catalogo_completo.png).
+- [Descrições das tabelas consultadas no catálogo](evidencias/09_descricoes_tabela.png).
+- [Cobertura e unicidade das partidas após a junção](evidencias/18_cobertura_e_pendencias.png).
 
-Os nomes acima identificam as evidências planejadas/salvas durante o trabalho; este arquivo não incorpora automaticamente as imagens nem comprova que já foram publicadas no GitHub.
-
-O notebook `05_catalogo_dados` registra e verifica os comentários. Deve ser executado após a criação das tabelas; se elas forem recriadas e os comentários forem perdidos, reaplique a documentação. O README também deve conter as demais seções exigidas, incluindo coleta e licença, pipeline, análise, qualidade e autoavaliação.
+Os comentários das tabelas e das 22 colunas de `silver_partidas_gramados` são aplicados no notebook `03_analise`. As outras 45 colunas são documentadas no notebook `05_catalogo_dados`, que também verifica os metadados. Caso as tabelas sejam recriadas e percam comentários, é necessário reaplicar as respectivas células de ambos os notebooks.
